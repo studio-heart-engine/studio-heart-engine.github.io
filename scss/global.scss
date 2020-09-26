@@ -8,13 +8,14 @@ $header-title-lh: $header-height - 32px;
 header {
     display: flex;
     position: fixed;
+    z-index: 1000;
     justify-content: space-between;
     width: 100%;
     height: $header-height;
     padding: 0px 32px;
     box-sizing: border-box;
-    background-color: white;
-    border-bottom: 1px solid #EEEEEE;
+    background-color: transparent;
+    // border-bottom: 1px solid #EEEEEE;
 
     div:first-child {
         display: inline-block;
@@ -35,7 +36,7 @@ header {
             font-size: 22px;
             vertical-align: top;
             line-height: $header-title-lh;
-            color: $studio-grey;
+            color: white;
 
             span {
                 color: $logo-pink;
@@ -55,10 +56,11 @@ header {
             line-height: 28px;
             margin: 0 29px;
             text-decoration: none;
-            color: $studio-grey;
+            color: white;
 
             &.active {
                 color: $logo-pink;
+                font-weight: bold;
             }
 
             &:after {
@@ -83,6 +85,10 @@ header {
                 }
             }
         }
+    }
+    
+    &.low-scroll {
+        background-color: $studio-purple;
     }
 }
 
