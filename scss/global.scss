@@ -5,6 +5,10 @@ $accent-tan: #FFD567;
 $header-height: 85px;
 $header-title-lh: $header-height - 32px;
 
+html, body {
+    overflow-x: hidden;
+}
+
 header {
     display: flex;
     position: fixed;
@@ -14,7 +18,7 @@ header {
     height: $header-height;
     padding: 0px 32px;
     box-sizing: border-box;
-    background-color: transparent;
+    background-color: $studio-purple;
     // border-bottom: 1px solid #EEEEEE;
 
     div:first-child {
@@ -61,6 +65,10 @@ header {
             &.active {
                 color: $logo-pink;
                 font-weight: bold;
+
+                @media only screen and (max-width: 430px) {
+                    display: none;
+                }
             }
 
             &:after {
@@ -109,6 +117,10 @@ footer {
         top: -108px;
         max-width: 216px;
         width: 50%;
+
+        @media only screen and (max-width: 432px) {
+            top: -25vw;
+        }
     }
 
     a {

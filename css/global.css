@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,7 +16,7 @@ header {
   padding: 0px 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: transparent;
+  background-color: #222039;
 }
 
 header div:first-child {
@@ -62,6 +66,12 @@ header div:last-child a {
 header div:last-child a.active {
   color: #D9025C;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 430px) {
+  header div:last-child a.active {
+    display: none;
+  }
 }
 
 header div:last-child a:after {
@@ -120,6 +130,12 @@ footer img {
   top: -108px;
   max-width: 216px;
   width: 50%;
+}
+
+@media only screen and (max-width: 432px) {
+  footer img {
+    top: -25vw;
+  }
 }
 
 footer a {
