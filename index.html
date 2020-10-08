@@ -36,6 +36,28 @@
             <section id="white-divider">
                 <img src="img/homepage_waves/new_white_divider.svg" alt="">
             </section>
+            <script>
+
+                let sendData = async function (email) {
+                    let response = await fetch(`https://script.google.com/macros/s/AKfycbxMco8ml1B2Ffjq64glRyIJGT7_erICT9cCrkMk74sx3ZtrNVc/exec?email=${email}`, {                            method: "GET",
+                        method: "GET",
+                        mode: "cors",
+                    });
+                    return response.json();
+                }
+
+                let submitMailingList = function () {
+                    let email = document.getElementById("mailing").value;
+                    let emailValidRegex = /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/g
+                    
+                    if (email.match(emailValidRegex)) {
+                        sendData(encodeURIComponent(email)).then(res => {
+                            console.log(res.result);
+                        })
+                    }
+                }
+
+            </script>
             <section id="bottom-info">
                 <div>
                     <div id="description">
@@ -78,28 +100,6 @@
                         </div>
                     </div>
                 </div>
-                <script>
-
-                    let sendData = async function (email) {
-                        let response = await fetch(`https://script.google.com/macros/s/AKfycbxMco8ml1B2Ffjq64glRyIJGT7_erICT9cCrkMk74sx3ZtrNVc/exec?value=${email}`, {
-                            method: "GET",
-                            mode: "cors",
-                        });
-                        return response.json();
-                    }
-
-                    let submitMailingList = function () {
-                        let email = document.getElementById("mailing").value;
-                        let emailValidRegex = /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/g
-                        
-                        if (email.match(emailValidRegex)) {
-                            sendData(encodeURIComponent(email)).then(res => {
-                                console.log(res.result);
-                            })
-                        }
-                    }
-
-                </script>
                 <div>
                     <h3>Join our mailing list!</h3>
                     <input id="mailing" placeholder="Enter your email to join our mailing list!">
