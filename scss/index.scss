@@ -349,7 +349,15 @@ main {
     }
 }
 
+#see-mailing-list {
+    display: none;
+}
+
 @media only screen and (max-width: 970px) {
+    #see-mailing-list {
+        display: block;
+    }
+
     #top-banner {
         font-size: 22px;
 
