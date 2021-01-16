@@ -53,10 +53,8 @@
             timeout = setTimeout(() => {
                 if (prevScrollpos > currentScrollPos) {
                     document.querySelector("header").style.transform = "translateY(0)";
-                    console.log("scrolled down");
                 } else {
                     document.querySelector("header").style.transform = "translateY(-100%)";
-                    console.log("scrolled up");
                 }
                 prevScrollpos = currentScrollPos;
             }, 20);
