@@ -1,0 +1,90 @@
+$logo-pink: #D9025C;
+$lighter-pink: #D9025C47;
+$studio-grey: #292826;
+$studio-purple: #222039;
+$accent-tan: #FFD567;
+$header-height: 85px;
+
+body {
+    background-image: url("../img/joyspring-images/mountain.png");
+    background-size: 100% auto;
+}
+
+header {
+    background-color: #fff4e880;
+    transition: transform 0.3s;
+    transform: translateY(0);
+
+    &.hidden {
+        transform: translateY(-100%);
+    }
+
+    div:last-child a {
+        color: $studio-purple;
+    }
+}
+
+#top {
+    background-image: linear-gradient(to bottom, transparent, #222039EE, $studio-purple);
+
+    & > img {
+        display: block;
+        margin: calc(50vh - 20vw) auto 0;
+        width: 55%;
+    }
+
+    .text {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 300px;
+        padding-top: 75px;
+        line-height: 24px;
+
+        p {
+            width: 33%;
+            padding: 60px;
+            font-size: 18px;
+            color: white;
+        }
+    }
+
+    .images {
+        background-color: $studio-purple;
+        padding-bottom: 15px;
+        height: 435px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+
+        img {
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+#bottom {
+    background-color: $studio-purple;
+    padding: 160px 0;
+
+    h2 {
+        font-family: 'Manrope', sans-serif;
+        margin-left: 9.3%;
+        font-size: 48px;
+        line-height: 66px;
+        color: white;
+    }
+}
+
+footer {
+    height: unset;
+    margin-top: 0px;
+    padding-bottom: 30px;
+
+    img {
+        position: static;
+    }
+}
