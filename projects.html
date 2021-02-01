@@ -36,10 +36,10 @@
                         <li>A cool scarf.</li> 
                     </ul>
                     <div>
-                        <button>
+                        <a href="https://studio-heart-engine.itch.io/">
                             <img src="img/icons/Itchio.svg">
                             Itch.io
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="images">
@@ -60,9 +60,14 @@
         </footer>
     </body>
     <script>
+
+        let visitItch = function () {
+            window.location.href = "https://studio-heart-engine.itch.io/";
+        }
+
         var prevScrollpos = window.pageYOffset;
         var timeout;
-        window.onscroll = function() {
+        window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
             clearTimeout(timeout);
             timeout = setTimeout(() => {

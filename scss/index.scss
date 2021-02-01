@@ -175,7 +175,7 @@ main {
             justify-content: space-between;
             min-width: 320px;
 
-            button {
+            a {
                 display: inline-flex;
                 align-items: center;
                 height: 100%;
@@ -186,6 +186,7 @@ main {
                 color: white;
                 font-size: 1em;
                 font-weight: 600;
+                text-decoration: none;
                 transition: background-color 0.3s;
 
                 &:not(:last-child) {

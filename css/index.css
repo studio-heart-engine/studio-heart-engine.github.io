@@ -236,7 +236,7 @@ main {
   min-width: 320px;
 }
 
-#bottom-info > div:nth-child(2) div button {
+#bottom-info > div:nth-child(2) div a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -252,35 +252,36 @@ main {
   color: white;
   font-size: 1em;
   font-weight: 600;
+  text-decoration: none;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
 
-#bottom-info > div:nth-child(2) div button:not(:last-child) {
+#bottom-info > div:nth-child(2) div a:not(:last-child) {
   margin-right: 36px;
 }
 
-#bottom-info > div:nth-child(2) div button:first-child {
+#bottom-info > div:nth-child(2) div a:first-child {
   background-color: #738ADB;
 }
 
-#bottom-info > div:nth-child(2) div button:first-child:hover {
+#bottom-info > div:nth-child(2) div a:first-child:hover {
   background-color: #738ADBA0;
 }
 
-#bottom-info > div:nth-child(2) div button:nth-child(2) {
+#bottom-info > div:nth-child(2) div a:nth-child(2) {
   background-color: #1778F2;
 }
 
-#bottom-info > div:nth-child(2) div button:nth-child(2):hover {
+#bottom-info > div:nth-child(2) div a:nth-child(2):hover {
   background-color: #1778F2A0;
 }
 
-#bottom-info > div:nth-child(2) div button:last-child {
+#bottom-info > div:nth-child(2) div a:last-child {
   background-color: #FA5C5C;
 }
 
-#bottom-info > div:nth-child(2) div button:last-child:hover {
+#bottom-info > div:nth-child(2) div a:last-child:hover {
   background-color: #FA5C5CA0;
 }
 

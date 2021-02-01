@@ -87,7 +87,7 @@ header div:last-child a {
   }
 }
 
-#top .text button {
+#top .text a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -103,16 +103,17 @@ header div:last-child a {
   color: white;
   font-size: 1em;
   font-weight: 600;
+  text-decoration: none;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   background-color: #FA5C5C;
 }
 
-#top .text button:hover {
+#top .text a:hover {
   background-color: #FA5C5CA0;
 }
 
-#top .text button img {
+#top .text a img {
   height: 36px;
   margin-right: 13px;
 }
