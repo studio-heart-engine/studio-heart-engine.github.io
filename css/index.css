@@ -325,7 +325,7 @@ main {
 }
 
 #team {
-  width: 60%;
+  width: 50%;
 }
 
 #team h3 {
@@ -347,15 +347,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   margin-top: 35px;
 }
 
 #team > div div {
   width: 140px;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-bottom: 35px;
 }
 
