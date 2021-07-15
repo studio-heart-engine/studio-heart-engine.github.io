@@ -175,6 +175,17 @@ main {
             justify-content: space-between;
             min-width: 320px;
 
+            @media only screen and (max-width: 800px) {
+                flex-flow: column;
+                justify-content: start;
+                align-items: center;
+
+                a {
+                    margin-bottom: 15px;
+                    width: 170px;
+                }
+            }
+
             a {
                 display: inline-flex;
                 align-items: center;
@@ -190,7 +201,8 @@ main {
                 transition: background-color 0.3s;
 
                 &:not(:last-child) {
-                    margin-right: 36px;
+                    margin-right: 18px;
+                    margin-left: 18px;
                 }
 
                 &:first-child {
@@ -275,12 +287,13 @@ main {
     & > div {
         display: flex;
         flex-flow: row wrap;
-        // justify-content: space-evenly;
+        justify-content: center;
         margin-top: 35px;
 
         div {
             width: 140px;
-            margin-right: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
             margin-bottom: 35px;
 
             &:last-child {
@@ -289,8 +302,8 @@ main {
 
             img {
                 width: 100%;
-                height: 140px;
                 margin-bottom: 19px;
+                border-radius: 8px;
             }
 
             h3 {
