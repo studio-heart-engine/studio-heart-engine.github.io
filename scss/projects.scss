@@ -100,7 +100,7 @@ footer {
             text-decoration: none;
             transition: background-color 0.3s;
 
-            &:first-child {
+            &:last-child {
                 background-color: #FA5C5C;
 
                 &:hover {
@@ -108,7 +108,7 @@ footer {
                 }
             }
 
-            &:last-child {
+            &:first-child {
                 background-color: #000000;
 
                 &:hover {
