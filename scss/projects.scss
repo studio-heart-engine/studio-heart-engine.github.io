@@ -100,19 +100,21 @@ footer {
             text-decoration: none;
             transition: background-color 0.3s;
 
-            &:last-child {
-                background-color: #FA5C5C;
-
-                &:hover {
-                    background-color: #FA5C5CA0;
-                }
-            }
-
             &:first-child {
                 background-color: #000000;
+                margin-bottom: 10px;
 
                 &:hover {
                     background-color: #000000A0;
+                }
+            }
+
+            &:last-child {
+                background-color: #FA5C5C;
+                margin-top: 10px;
+
+                &:hover {
+                    background-color: #FA5C5CA0;
                 }
             }
 

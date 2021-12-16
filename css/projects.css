@@ -130,19 +130,21 @@ footer {
 }
 
 #top .text a:first-child {
-  background-color: #FA5C5C;
+  background-color: #000000;
+  margin-bottom: 10px;
 }
 
 #top .text a:first-child:hover {
-  background-color: #FA5C5CA0;
+  background-color: #000000A0;
 }
 
 #top .text a:last-child {
-  background-color: #000000;
+  background-color: #FA5C5C;
+  margin-top: 10px;
 }
 
 #top .text a:last-child:hover {
-  background-color: #000000A0;
+  background-color: #FA5C5CA0;
 }
 
 #top .text a img {
